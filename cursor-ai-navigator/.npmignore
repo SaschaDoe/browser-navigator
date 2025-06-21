@@ -1,0 +1,43 @@
+# Development files
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+
+# Source files (only ship dist/)
+src/
+tsconfig.json
+tsconfig.*.json
+
+# Test files
+test/
+tests/
+__tests__/
+*.test.*
+*.spec.*
+
+# Development dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.tgz
+coverage/
+
+# Examples and docs (keep README.md)
+examples/
+docs/
+USAGE.md 

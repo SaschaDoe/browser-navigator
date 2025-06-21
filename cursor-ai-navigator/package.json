@@ -1,0 +1,77 @@
+{
+  "name": "@cursor-ai/navigator",
+  "version": "1.0.0",
+  "description": "Automated visual mapping and navigation system for AI assistants like Cursor",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "cursor-navigator": "bin/cursor-navigator.js",
+    "cursor-nav": "bin/cursor-navigator.js"
+  },
+  "scripts": {
+    "build": "tsc && npm run copy-templates",
+    "copy-templates": "node -e \"const fs=require('fs-extra'); if(fs.existsSync('src/templates')) fs.copySync('src/templates', 'dist/templates')\"",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "prepare": "npm run build",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "cursor",
+    "ai",
+    "navigation",
+    "automation",
+    "testing",
+    "playwright",
+    "screenshots",
+    "web-automation",
+    "ai-assistant",
+    "visual-mapping"
+  ],
+  "author": "Cursor AI Navigator Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/cursor-ai-navigator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/cursor-ai-navigator/issues"
+  },
+  "homepage": "https://github.com/your-username/cursor-ai-navigator#readme",
+  "files": [
+    "dist/",
+    "bin/",
+    "templates/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@playwright/test": "^1.49.0",
+    "chalk": "^5.0.0",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.0.0",
+    "glob": "^10.0.0",
+    "inquirer": "^9.0.0",
+    "ora": "^7.0.0",
+    "yaml": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.0",
+    "@types/inquirer": "^9.0.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.19.1",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "playwright": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
