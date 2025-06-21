@@ -33,12 +33,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/cursor-ai-navigator.git"
+    "url": "https://github.com/SaschaDoe/browser-navigator.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/cursor-ai-navigator/issues"
+    "url": "https://github.com/SaschaDoe/browser-navigator/issues"
   },
-  "homepage": "https://github.com/your-username/cursor-ai-navigator#readme",
+  "homepage": "https://github.com/SaschaDoe/browser-navigator#readme",
   "files": [
     "dist/",
     "bin/",

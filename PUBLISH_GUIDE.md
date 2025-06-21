@@ -28,19 +28,19 @@ This guide will help you publish the `@cursor-ai/navigator` package to npm.
 
 ## 📝 Publication Steps
 
-### Step 1: Update Repository URLs
-Before publishing, update the repository URLs in `cursor-ai-navigator/package.json`:
+### Step 1: Repository URLs ✅
+Repository URLs are already configured:
 
 ```json
 {
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/cursor-navigator-testbed.git"
+    "url": "https://github.com/SaschaDoe/browser-navigator.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/cursor-navigator-testbed/issues"
+    "url": "https://github.com/SaschaDoe/browser-navigator/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/cursor-navigator-testbed#readme"
+  "homepage": "https://github.com/SaschaDoe/browser-navigator#readme"
 }
 ```
 
@@ -51,17 +51,17 @@ npm run publish:dry-run      # See what files will be included
 npm run publish:check        # Test publish without actually publishing
 ```
 
-### Step 3: Create npm Account
-If you don't have an npm account:
-1. Go to [npmjs.com](https://npmjs.com)
-2. Sign up for a free account
-3. Verify your email address
+### Step 3: npm Account ✅
+Your npm account is ready: **sashbot** at [npmjs.com](https://www.npmjs.com/settings/sashbot/profile)
 
 ### Step 4: Login to npm
 ```bash
 npm login
 ```
-Enter your npm credentials (username, password, email).
+Enter your npm credentials:
+- **Username**: sashbot
+- **Password**: [your password]
+- **Email**: [your registered email]
 
 ### Step 5: Check Package Name Availability
 ```bash
